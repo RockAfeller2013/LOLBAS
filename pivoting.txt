@@ -9,3 +9,8 @@ gs-netcat
 plink
 iox
 nps
+
+
+qemu-system-i386.exe -m 1M -netdev user,id=lan,restrict=off -netdev 
+socket,id=sock,connect=<IP>:443 -netdev hubport,id=port-lan,hubid=0,netdev=lan -netdev 
+hubport,id=port-sock,hubid=0,netdev=sock -nographic
