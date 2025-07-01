@@ -10,6 +10,7 @@ plink
 iox
 nps
 
+Network tunneling with… QEMU? - https://securelist.com/network-tunneling-with-qemu/111803/
 
 qemu-system-i386.exe -m 1M -netdev user,id=lan,restrict=off -netdev 
 socket,id=sock,connect=<IP>:443 -netdev hubport,id=port-lan,hubid=0,netdev=lan -netdev 
